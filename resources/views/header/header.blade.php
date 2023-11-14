@@ -1,5 +1,5 @@
   <!-- start header -->
-  <header class="header mobile_bg">
+  <header class="header mobile_bg header-web">
       <div class="container">
           <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
@@ -19,15 +19,13 @@
                               <i class="bi bi-person login_icon"></i>
                           </a>
                       @else
-                        
-
                           <a class="navbar-toggler" href="{{ route('logout') }}"
                               onclick="event.preventDefault();
-                               document.getElementById('logout-form').submit();">
+                               document.getElementById('logout-form2').submit();">
                               <i class="fa-solid fa-right-to-bracket login_icon"></i>
                           </a>
 
-                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                          <form id="logout-form2" action="{{ route('logout') }}" method="POST" class="d-none">
                               @csrf
                           </form>
                       @endguest
@@ -64,6 +62,31 @@
                           <li class="nav-item">
                               <a class="nav-link" href="{{ route('home') }}#services">Portfolio</a>
                           </li>
+
+                          <li class="dropdown nav-item"><a href="#">
+                                  <span>Diploma</span>
+                                  <i class="bi bi-chevron-down"></i></a>
+                              <ul>
+
+                                  <li class="dropdown dropdown2"><a href="#"><span>Web Diploma</span> <i
+                                              class="bi bi-chevron-right"></i></a>
+                                      <ul>
+                                          <li><a href="{{ route('add.web') }}"><i class="bi bi-chevron-right"></i> Add Session</a></li>
+                                          <li><a href="#"><i class="bi bi-chevron-right"></i> List Sessions</a>
+                                          </li>
+                                      </ul>
+                                  </li>
+
+                                  <li class="dropdown dropdown2 mt-2"><a href="#"><span>Network Diploma</span> <i
+                                              class="bi bi-chevron-right"></i></a>
+                                      <ul>
+                                          <li><a href="#"><i class="bi bi-chevron-right"></i> Add Session</a></li>
+                                          <li><a href="#"><i class="bi bi-chevron-right"></i> List Sessions</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+
                       </ul>
                   </div>
               </div>

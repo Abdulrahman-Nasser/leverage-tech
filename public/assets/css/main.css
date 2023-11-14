@@ -233,6 +233,98 @@ loader----
     color: white !important;
 }
 
+.dropdown {
+    top: 13px;
+}
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.dropdown2 {
+    top: 0 !important;
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: var(--dark);
+    box-shadow: 0px 0px 30px rgba(208, 213, 224, 0.521);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+    list-style: none;
+}
+
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+    color: #fff;
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    right: 85%;
+    visibility: visible;
+}
+
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        right: -90%;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+        right: -85%;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .navbar .dropdown .dropdown ul {
+        right: -17%;
+        left: 68px;
+        top: 32px;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+        right: -17%;
+        left: 68px;
+        top: 32px;
+    }
+}
 
 /* practlce js  */
 .home {
@@ -851,7 +943,7 @@ loader----
 
 
 @media screen and (max-width:600px) {
-    .social-button{
+    .social-button {
         margin: 0 !important;
     }
 }
@@ -1143,7 +1235,7 @@ button {
 
 .login-page .card {
     height: 68vh;
-    background-color: #ecf0f3;
+    background-color: #ecf0f3e3;
     border-radius: 20px 70px;
 }
 
@@ -1157,7 +1249,7 @@ button {
     padding: 10px;
     padding-left: 20px;
     height: 50px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 50px;
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
     outline: none !important;
@@ -1171,17 +1263,16 @@ button {
 }
 
 
-.register .card{
+.register .card {
     height: 75vh;
 }
-.register .card-body{
+
+.register .card-body {
     margin-top: 10px;
 }
 
 @media screen and (max-width:768px) {
-    .login-page .container{
-        /* margin-top: 56px; */
-    }
+
     .login-page .card {
         height: 50vh;
     }
@@ -1191,9 +1282,41 @@ button {
     .login-page .card {
         height: 58vh;
     }
-    .register .card-body{
-        margin-top : 26px;
+
+    .register .card-body {
+        margin-top: 26px;
     }
+}
+
+
+
+/*-------------------------
+add web page
+---------------------------*/
+
+.add-web {
+    background-color: var(--dark);
+    height: 100vh;
+    color: white !important;
+}
+
+.header-web {
+    background-color: var(--dark);
+}
+
+.add-web .container {
+    border: 1px solid #fff;
+    border-radius: 15px 66px;
+    padding: 30px;
+}
+
+.upload {
+    padding: 5px 25px;
+    background-color: #1DA1F2;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+
 }
 
 
