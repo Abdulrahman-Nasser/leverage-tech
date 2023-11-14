@@ -16,12 +16,20 @@
 
                       @guest
                           <a href="{{ route('login') }}" class="navbar-toggler">
-                              <i class="fa-solid fa-right-to-bracket login_icon"></i>
-                          </a>
-                      @else
-                          <a href="{{ route('logout') }}" class="navbar-toggler">
                               <i class="bi bi-person login_icon"></i>
                           </a>
+                      @else
+                        
+
+                          <a class="navbar-toggler" href="{{ route('logout') }}"
+                              onclick="event.preventDefault();
+                               document.getElementById('logout-form').submit();">
+                              <i class="fa-solid fa-right-to-bracket login_icon"></i>
+                          </a>
+
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                              @csrf
+                          </form>
                       @endguest
 
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
