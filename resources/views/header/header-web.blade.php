@@ -21,7 +21,7 @@
                       @else
                           <a class="navbar-toggler" href="{{ route('logout') }}"
                               onclick="event.preventDefault();
-                               document.getElementById('logout-form2').submit();">
+                             document.getElementById('logout-form2').submit();">
                               <i class="fa-solid fa-right-to-bracket login_icon"></i>
                           </a>
 
@@ -68,7 +68,7 @@
                                   <i class="bi bi-chevron-down"></i></a>
                               <ul>
 
-                                  <li class="dropdown dropdown2"><a href="#"><span>Web Diploma</span> <i
+                                  <li class="dropdown dropdown2"><a href="#"><span>Diploma</span> <i
                                               class="bi bi-chevron-right"></i></a>
                                       <ul>
                                           <li><a href="{{ route('add.diploma') }}"><i class="bi bi-chevron-right"></i>
@@ -79,18 +79,17 @@
                                       </ul>
                                   </li>
 
-                                  <li class="dropdown dropdown2 mt-3"><a href="#"><span>Department</span> <i
+
+                                  <li class="dropdown dropdown2"><a href="#"><span>Department</span> <i
                                               class="bi bi-chevron-right"></i></a>
                                       <ul>
-                                          <li><a href="{{ route('add.department') }}"><i
-                                                      class="bi bi-chevron-right"></i>
+                                          <li><a href="{{ route('add.department') }}"><i class="bi bi-chevron-right"></i>
                                                   Add Department</a></li>
                                           <li><a href="#"><i class="bi bi-chevron-right mt-2"></i> List
                                                   Department</a>
                                           </li>
                                       </ul>
                                   </li>
-
 
                               </ul>
                           </li>
@@ -106,7 +105,7 @@
               @else
                   <a class="btn btn-login" href="{{ route('logout') }}"
                       onclick="event.preventDefault();
-                           document.getElementById('logout-form').submit();">
+                         document.getElementById('logout-form').submit();">
                       {{ __('Logout') }}
                   </a>
 

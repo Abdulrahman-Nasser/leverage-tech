@@ -42,7 +42,7 @@
         <div class="container">
 
             <div class="row gy-4 align-items-center features-item">
-                <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-7 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="text-light">About Leverage</h3>
                     <p>
                         At Leverage Software Solutions, we believe in building strong and long-lasting partnerships with our
@@ -59,7 +59,7 @@
 
 
                 </div>
-                <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+                <div class="col-lg-5 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
                     <div class="image-stack">
                         <img src="assets/img/android.jpg" width="80px" alt="not found" class="stack-front">
                         <img src="assets/img/web2.jpg" alt="not found" class="stack-back">

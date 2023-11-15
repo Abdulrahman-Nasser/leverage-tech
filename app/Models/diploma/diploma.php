@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Web;
+namespace App\Models\diploma;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class webDiploma extends Model
+class diploma extends Model
 {
     use HasFactory;
 }

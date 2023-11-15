@@ -1319,6 +1319,12 @@ add web page
 
 }
 
+@media screen and (max-width:600px) {
+    .add-web .container {
+       width: 90%;
+    }
+}
+
 
 
 /*--------------------------------------------------------------

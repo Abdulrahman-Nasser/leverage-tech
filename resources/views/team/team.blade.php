@@ -11,8 +11,7 @@
     <section id="team" class="team-sec">
 
         {{-- start header --}}
-        @include('header.header')
-
+        @include('header.header-web')
         {{-- end header --}}
 
         <div class="container p-70 px-2 mt-n2">
@@ -118,8 +117,6 @@
                 </div>
 
 
-
-
                 <div class="col-lg-4 col-md-6">
                     <div class="team-item">
                         <a href="assets/img/mahmoud.jpg" class="glightbox">
@@ -128,7 +125,7 @@
                         <div class="team-text">
                             <div>
                                 <h3 class="mb-0">Mahmmoud Abdlrahem</h3>
-                                <p>PHP & Laravel developer</p>
+                                <p>Backend developer</p>
                             </div>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i
@@ -163,7 +160,6 @@
                         </div>
                     </div>
                 </div>
-
 
 
                 <div class="col-lg-4 col-md-6">
@@ -374,4 +370,7 @@
         {{-- </div> --}}
     </section>
     <!-- Team End -->
+
+    
 @endsection
+
