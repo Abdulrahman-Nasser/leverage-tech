@@ -335,6 +335,7 @@ loader----
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .overlay {
@@ -687,7 +688,7 @@ loader----
 
 
 /*** Services Start ***/
-
+/*
 .services {
     background-color: white;
 }
@@ -704,7 +705,7 @@ loader----
     transition: all 0.3s !important;
 }
 
-.services .services-item:hover {
+/* .services .services-item:hover {
     border-radius: 0%;
     border-top-right-radius: 30%;
     border-bottom-left-radius: 30%;
@@ -779,10 +780,84 @@ loader----
 
 .services .services-item:hover a {
     background-color: var(--primary);
-}
+} */ */
 
 
 /*** Services End ***/
+
+
+/* services */
+.services {
+    padding-bottom: 30px;
+}
+
+.services .icon-box {
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.services .icon-box::before {
+    content: "";
+    position: absolute;
+    background: #fdeff2;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.services .icon-box:hover::before {
+    /* background: #e43c5c; */
+    background: var(--dark);
+    top: 0;
+    border-radius: 0px;
+}
+
+.services .icon {
+    margin-bottom: 15px;
+}
+
+.services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #1DA1F2;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .title a {
+    color: #111;
+}
+
+.services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+    color: #fff;
+}
+
+.services .icon-box:hover .icon i {
+    color: #FF2DD8;
+}
 
 
 
@@ -1321,12 +1396,44 @@ add web page
 
 @media screen and (max-width:600px) {
     .add-web .container {
-       width: 90%;
+        width: 90%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Verify
+--------------------------------------------------------------*/
+.verify .card{
+    height: 35vh;
+    text-align: center;
+    background-color:var(--dark);
+    color: white;
+}
+.btn-link{
+    color: #1DA1F2;
+}
+
+@media screen and (max-width:768px) {
+    .verify .card{
+        position: relative;
+        top: 150px;
+        padding: 10px 0;
+        height: 22vh;
     }
 }
 
 
+@media screen and (max-width:600px) {
+    .verify .card{
+        position: relative;
+        top: 70px;
+        height: 30vh;
+    }
 
+    .verify .btn-link {
+        margin-top: 40px;
+    }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

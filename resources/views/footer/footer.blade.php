@@ -54,7 +54,7 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Our Newsletter</h4>
                     <p>Please Make Sure that you are up to date</p>
-                    <form action="" method="post">
+                    <form action="{{ route('login') }}" method="GET">
                         <input type="email" name="email"><input type="submit" value="Subscribe">
                     </form>
 

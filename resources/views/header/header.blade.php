@@ -1,5 +1,5 @@
   <!-- start header -->
-  <header class="header mobile_bg header-web">
+  <header class="header mobile_bg">
       <div class="container">
           <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
@@ -63,7 +63,8 @@
                               <a class="nav-link" href="{{ route('home') }}#services">Portfolio</a>
                           </li>
 
-                          <li class="dropdown nav-item"><a href="#">
+                          {{-- Diploma --}}
+                          {{-- <li class="dropdown nav-item"><a href="#">
                                   <span>Diploma</span>
                                   <i class="bi bi-chevron-down"></i></a>
                               <ul>
@@ -93,7 +94,7 @@
 
 
                               </ul>
-                          </li>
+                          </li> --}}
 
                       </ul>
                   </div>

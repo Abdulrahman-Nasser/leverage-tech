@@ -73,18 +73,10 @@
     </section><!-- End Features Section -->
 
     <!-- Services Start -->
-    <div class="container-fluid services py-5 sec" id="services">
-        <div class="container py-5">
+    {{-- <div class="container-fluid services py-5 sec" id="services">
+        <div class="container py-5"> --}}
 
-
-            <!--  Section Title -->
-            <div class="container section-title text-center" data-aos="fade-up">
-                <h2 class="secTitleDark" data-aos="fade-in">Our Services</h2>
-                <p class="parTitle">We work with you to achieve your goals </p>
-            </div><!-- End Section Title -->
-
-
-            <div class="row g-5 services-inner">
+    {{-- <div class="row g-5 services-inner">
 
 
                 <div class="col-md-6 col-lg-4">
@@ -192,12 +184,78 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+    {{-- </div>
+    </div> --}}
+    <!-- Services End -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services p-70">
+        <div class="container">
+
+            <!--  Section Title -->
+            <div class="container section-title text-center" data-aos="fade-up">
+                <h2 class="secTitleDark" data-aos="fade-in">Our Services</h2>
+                <p class="parTitle">We work with you to achieve your goals </p>
+            </div><!-- End Section Title -->
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="flip-right">
+                    <div class="icon-box">
+                        <div class="icon"><i class="fa fa-code fa-4x mb-4 "></i></div>
+                        <h4 class="title"><a href="">Web Development</a></h4>
+                        <p class="description">Our talented team of designers and developers work hand in hand to craft
+                            visually
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="flip-right">
+                    <div class="icon-box">
+                        <div class="icon"> <i class="fa fa-external-link-alt fa-4x mb-4 "></i>
+                        </div>
+                        <h4 class="title"><a href="">UI/UX Design</a></h4>
+                        <p class="description">we're passionate about crafting visually stunning and user-friendly
+                            interfaces
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="flip-right">
+                    <div class="icon-box">
+                        <div class="icon"> <i class="fas fa-user-secret fa-4x mb-4 "></i>
+                        </div>
+                        <h4 class="title"><a href="">Network & Cyber Security</a></h4>
+                        <p class="description"> Networks are the backbone of our digital world, connecting people.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="flip-right">
+                    <div class="icon-box">
+                        <div class="icon"> <i class="fa fa-file-code fa-4x mb-4 "></i></div>
+                        <h4 class="title"><a href="">Software Development</a></h4>
+                        <p class="description"> Software development is the creative process of designing, coding, and testing computer
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0 mt-3" data-aos="flip-right">
+                    <div class="icon-box">
+                        <div class="icon"> <i class="bi bi-person mb-4 "></i></div>
+                        <h4 class="title"><a href="">K.K / Kids Coding</a></h4>
+                        <p class="description">   Kids programming introduces young minds to the exciting world of coding
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
-
         </div>
-    </div>
-    <!-- Services End -->
+    </section><!-- End Services Section -->
+
 
 
     <!-- Social section -->
@@ -326,6 +384,3 @@
     @include('practlise_js.main')
     @include('footer.footer')
 @endsection
-
-
-

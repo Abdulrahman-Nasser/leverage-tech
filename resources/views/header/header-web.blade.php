@@ -63,7 +63,8 @@
                               <a class="nav-link" href="{{ route('home') }}#services">Portfolio</a>
                           </li>
 
-                          <li class="dropdown nav-item"><a href="#">
+                          {{-- Diploma --}}
+                          {{-- <li class="dropdown nav-item"><a href="#">
                                   <span>Diploma</span>
                                   <i class="bi bi-chevron-down"></i></a>
                               <ul>
@@ -92,7 +93,7 @@
                                   </li>
 
                               </ul>
-                          </li>
+                          </li> --}}
 
                       </ul>
                   </div>

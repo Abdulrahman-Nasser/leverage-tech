@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
-Auth::routes();
+Auth::routes([
+    'verify' => true,
+]);
 
 Route::get('/', function () {
     return view('home');
@@ -17,11 +19,10 @@ Route::get('/', function () {
 // home page route get
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth','verified'])->group(function () {
     //------------------------------ Team ---------------------------- //
     // route get team page
     Route::get('/team', [teamController::class, 'team'])->name('team');
-    
 
     //  ------------------------ Diploma -------------------------------//
     // diploma route get add page
